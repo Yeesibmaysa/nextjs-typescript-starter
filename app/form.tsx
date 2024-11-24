@@ -12,6 +12,41 @@ export function Form({
     >
       <div>
         <label
+          htmlFor="firstName"
+          className="block text-xs text-gray-600 uppercase"
+        >
+          First Name
+        </label>
+        <input
+          id="firstName"
+          name="firstName"
+          type="text"
+          placeholder="Ex. Yeesibmaysa"
+          autoComplete="firstName"
+          required
+          
+          className="mt-1 block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-black focus:outline-none focus:ring-black sm:text-sm"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="firstName"
+          className="block text-xs text-gray-600 uppercase"
+        >
+          Last Name
+        </label>
+        <input
+          id="lastName"
+          name="lastName"
+          type="text"
+          placeholder="Ex. Kanchanasutha"
+          autoComplete="lastName"
+          required
+          className="mt-1 block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-black focus:outline-none focus:ring-black sm:text-sm"
+        />
+      </div>
+      <div>
+        <label
           htmlFor="email"
           className="block text-xs text-gray-600 uppercase"
         >
@@ -37,6 +72,21 @@ export function Form({
         <input
           id="password"
           name="password"
+          type="password"
+          required
+          className="mt-1 block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-black focus:outline-none focus:ring-black sm:text-sm"
+        />
+      </div>
+      <div>
+        <label
+          htmlFor="confirmPassword"
+          className="block text-xs text-gray-600 uppercase"
+        >
+          Confirm Password
+        </label>
+        <input
+          id="confirmPassword"
+          name="confirmPassword"
           type="password"
           required
           className="mt-1 block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-black focus:outline-none focus:ring-black sm:text-sm"
